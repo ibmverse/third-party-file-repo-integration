@@ -1,0 +1,22 @@
+{
+  "name": "verse-files-extensibility-poc-server",
+  "version": "1.0.0",
+  "description": "A nodejs project used as the server of a POC for verse files extensibility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.ibm.com:bjfgsun/verse-files-extensibility-poc-server.git"
+  },
+  "keywords": [
+    "Verse",
+    "files-extensibility"
+  ],
+  "author": "bjfgsun@cn.ibm.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
