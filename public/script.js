@@ -2,7 +2,9 @@ window.onload = function () {
   var verseWindow;
   var verseOrigin;
 
-  // add message listeners
+  // Add message listeners
+  // The extension must reply 'com.ibm.verse.ping.application.loaded' message sent from Verse as below,
+  // to tell Verse the extension is loaded
   window.addEventListener('message', function(evt) {
     var verseApiType = evt && evt.data && evt.data.verseApiType;
     if (verseApiType === 'com.ibm.verse.ping.application.loaded') {
@@ -39,6 +41,7 @@ window.onload = function () {
         selected.push(constructLinkData(box));
       }
     });
+    // below code is how to send message from third party file repository to Verse to insert file link(s)
     var msg = {
       verseApiType: 'com.ibm.verse.ext.file.add.links',
       links: selected,

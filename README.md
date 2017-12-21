@@ -1,6 +1,6 @@
-# Verse Files Extensibility POC Server
+# Verse Third Party File Repository Integration Server Sample
 
-This project is used as the server of a POC for Verse Files Extensibility.
+This project acts as the Files server sample of Verse Third Party Files Repository Integration extension.
 
 ## Demo
 
@@ -8,12 +8,7 @@ Below is a demo of Files Extensibility.
 
 ![Demo](./Files-Extensibility-POC.gif)
 
-## Design
-
-- [UX design](https://apps.na.collabserv.com/files/app/file/81a85cc6-497c-40af-9a06-99c0847e7406)
-- [Implementation Design]()
-
-## Steps To Run The POC Locally
+## Steps To Run This Files Server Sample Locally
 
 ### Clone this server project and run it locally
 
@@ -23,8 +18,9 @@ Below is a demo of Files Extensibility.
 
 ### Install Extension
 
-You need to clone [verse-developer-chrome-ext](https://github.ibm.com/IBM-Verse/verse-developer-chrome-ext) and install it as a Chrome extension first. Then copy the `applications.json` from this project into the `src` folder of project `verse-developer-chrome-ext`. What's more, you also need to add a new match line in the array `content_scripts.matches` of file `manifest.json`. Like below:
-
+1. Clone [verse-developer-chrome-ext](https://github.ibm.com/IBM-Verse/verse-developer-chrome-ext).
+2. Copy the `applications.json` file from this project to `src` folder of the project `verse-developer-chrome-ext` cloned in step 1.
+3. Open the `manifest.json` file which is located in the project `verse-developer-chrome-ext` cloned in step 1, add your Verse server url in matches array.
 ```
   ...
   
@@ -34,20 +30,25 @@ You need to clone [verse-developer-chrome-ext](https://github.ibm.com/IBM-Verse/
       "https://mail.notes.na.collabserv.com/verse*",
       "https://mail.notes.ap.collabserv.com/verse*",
       "https://mail.notes.ce.collabserv.com/verse*",
-      "https://mail.notes.collabservintegration.com/vers*" // new added
+      // add your Verse server url here similar to the above
     ],
     "run_at": "document_start"
   }],
 
   ...
 ```
+4. Install above cloned project as Chrome extension.
 
 For the new added line, it should match the Verse server URL that you are using.
 
 In `chrome://extensions` page, reload above extension to make above updates work.
 
-### Run the POC
+### Run this Sample
 
-1. In Chrome, start Verse with gk `extension=1&3rd-party-file=1`, e.g. `https://mail.notes.collabservintegration.com/verse?extension=1&3rd-party-file=1`
+1. In Chrome, start Verse with gk `extension=1&3rd-party-file=1`, e.g. `https://<your verse server url>/verse?extension=1&3rd-party-file=1`
 2. In Chrome, open a new tab with https://localhost:3002/, it will show you a blocker `Your connection is not private`. Click `ADVANCED` and then `Proceed to localhost (unsafe)`. This is only need to do for the first time after POC server started.
 3. Compose a new message, then you can try the POC as the demo mentioned above.
+
+## License
+
+[MIT licensed](./LICENSE)

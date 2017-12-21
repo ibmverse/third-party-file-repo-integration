@@ -6,10 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.ibm.com:bjfgsun/verse-files-extensibility-poc-server.git"
-  },
   "keywords": [
     "Verse",
     "files-extensibility"
