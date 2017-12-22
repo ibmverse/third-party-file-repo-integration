@@ -39,14 +39,10 @@ Below is a demo of Files Extensibility.
 ```
 4. Install above cloned project as Chrome extension.
 
-For the new added line, it should match the Verse server URL that you are using.
-
-In `chrome://extensions` page, reload above extension to make above updates work.
-
 ### Run this Sample
 
-1. In Chrome, start Verse with gk `extension=1&3rd-party-file=1`, e.g. `https://<your verse server url>/verse?extension=1&3rd-party-file=1`
-2. In Chrome, open a new tab with https://localhost:3002/, it will show you a blocker `Your connection is not private`. Click `ADVANCED` and then `Proceed to localhost (unsafe)`. This is only need to do for the first time after POC server started.
+1. Launch Verse in Chrome.
+2. In Chrome, open a new tab with the Files server sample url https://localhost:3002/, it will show you a blocker `Your connection is not private`. Click `ADVANCED` and then `Proceed to localhost (unsafe)`. This is only need to do for the first time after sample server started.
 3. Compose a new message, then you can try the POC as the demo mentioned above.
 
 ## License
