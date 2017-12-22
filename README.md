@@ -4,7 +4,7 @@ This project acts as the Files server sample of Verse Third Party Files Reposito
 
 ## Demo
 
-Below is a demo of Files Extensibility.
+Below is a demo of this third party file repository integration sample.
 
 ![Demo](./Files-Extensibility-POC.gif)
 
@@ -43,7 +43,7 @@ Below is a demo of Files Extensibility.
 
 1. Launch Verse in Chrome.
 2. In Chrome, open a new tab with the Files server sample url https://localhost:3002/, it will show you a blocker `Your connection is not private`. Click `ADVANCED` and then `Proceed to localhost (unsafe)`. This is only need to do for the first time after sample server started.
-3. Compose a new message, then you can try the POC as the demo mentioned above.
+3. Compose a new message, then you can try the third party file repository integration feature.
 
 ## License
 
