@@ -6,7 +6,7 @@ This project acts as the Files server sample of Verse Third Party Files Reposito
 
 Below is a demo of this third party file repository integration sample.
 
-![Demo](./Files-Extensibility-POC.gif)
+![Demo](./third_party_file_repository_integration.gif)
 
 ## Steps To Run This Files Server Sample Locally
 
