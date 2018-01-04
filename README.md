@@ -10,13 +10,13 @@ Below is a demo of this third party file repository integration sample.
 
 ## Steps To Run This Files Server Sample Locally
 
-### Clone this server project and run it locally
+### Clone this File server project and run it locally
 
 1. Clone it into your local disk
 2. use `npm install` to install all dependencies
 3. use `npm start` to start the server
 
-### Install Extension
+### Register third party file repository extension in Verse
 
 1. Clone [verse-developer-chrome-ext](https://github.ibm.com/IBM-Verse/verse-developer-chrome-ext).
 2. Copy the `applications.json` file from this project to `src` folder of the project `verse-developer-chrome-ext` cloned in step 1.
@@ -39,7 +39,7 @@ Below is a demo of this third party file repository integration sample.
 ```
 4. Install above cloned project as Chrome extension.
 
-### Run this Sample
+### Try extension in Verse
 
 1. Launch Verse in Chrome.
 2. In Chrome, open a new tab with the Files server sample url https://localhost:3002/, it will show you a blocker `Your connection is not private`. Click `ADVANCED` and then `Proceed to localhost (unsafe)`. This is only need to do for the first time after sample server started.
