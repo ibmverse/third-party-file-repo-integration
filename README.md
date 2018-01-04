@@ -10,7 +10,7 @@ Below is a demo of this third party file repository integration sample.
 
 ## Steps To Run This Files Server Sample Locally
 
-### Clone this file server project and run it locally
+### Clone this File server project and run it locally
 
 1. Clone it into your local disk
 2. use `npm install` to install all dependencies
