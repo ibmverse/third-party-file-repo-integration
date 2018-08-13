@@ -1,7 +1,7 @@
 {
   "name": "verse-files-extensibility-server-sample",
   "version": "1.0.0",
-  "description": "A nodejs project acts as the sample Files server for third party file repository integration feature",
+  "description": "A nodejs project acts as the sample Files server for third-party file repository integration feature",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"

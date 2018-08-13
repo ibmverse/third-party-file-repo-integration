@@ -41,7 +41,7 @@ window.onload = function () {
         selected.push(constructLinkData(box));
       }
     });
-    // below code is how to send message from third party file repository to Verse to insert file link(s)
+    // below code is how to send message from third-party file repository to Verse to insert file link(s)
     var msg = {
       verseApiType: 'com.ibm.verse.ext.file.add.links',
       links: selected,
